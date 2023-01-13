@@ -7,7 +7,7 @@ baseurl: ""
 permalink: :title/
 
 # set timezone
-timezone: America/New_York
+timezone: Asia/Shanghai
 
 kramdown:
     footnote_backlink: "&#10548;"
