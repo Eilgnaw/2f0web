@@ -3,12 +3,6 @@ layout: page
 permalink: /privacy/
 title: Privacy
 ---
-
-<p class="message">
-  <small>The below text serves as an example/filler text for the included privacy page and does not actually reflect the privacy policies of this website. Neither the subdomain for Quattle nor my main website at <a href="https://victorwynne.com/">victorwynne.com</a> collect ANY information of any kind. Zero cookies.</small>
-</p>
-
-
 <h1>Privacy Policy</h1>
 <p>Last updated: December 16, 2021</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

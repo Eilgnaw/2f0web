@@ -24,7 +24,7 @@ title: Home
   {%- if post.last_modified_at -%}
   <br><i>Last updated on: {{ post.last_modified_at | date_to_long_string: "ordinal", "US" }}</i>
   {%- endif -%}
-  <br><span class="author">{% include author.html %}</span>{% if post.link %}<span class="permalink"><a href="{{ post.url }}"> ∞ </a></span>{% endif %}
+  <br>{% if post.link %}<span class="permalink"><a href="{{ post.url }}"> ∞ </a></span>{% endif %}
   </time>
 
   {{ post.content | smartify }}
