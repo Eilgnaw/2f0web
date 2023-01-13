@@ -1,0 +1,189 @@
+// Posts and pages
+
+figure {
+    margin-right:   0;
+    margin-left:    0;
+    margin-top:     1.5em;
+    margin-bottom:  2em;
+
+    & > :nth-last-child(2) {
+        margin-bottom: 0;
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
+    }
+    figcaption {
+        color: #878787;
+        margin-top: 0.4em;
+        font-size:  0.8em;
+		text-align: center
+    }
+    &.screenshot {
+        margin-left:    0;
+        margin-right:   0;
+        margin-top:     0;
+
+        figcaption {
+            margin-top:     1em;
+            margin-right:   2em;
+            margin-left:    2em;
+        }
+    }
+    &.attributed-quote {
+        margin-left:    0;
+        margin-right:   0;
+
+        figcaption {
+            margin-top:     0.8em;
+            margin-left:    4em;
+
+            p {
+                display: inline;
+            }
+            &::first-letter {
+                margin-left: -2.5ex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px)  {
+    figure {
+        margin-left:    1em;
+        margin-right:   1em;
+    }
+}
+
+@media screen and (max-width: 500px)  {
+    figure.screenshot figcaption {
+        margin-top: 0;
+    }
+}
+
+// End of alterations for captions.
+
+.page,
+.post {
+  margin-bottom: 1em;
+
+  li + li {
+    margin-top: .25rem;
+  }
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-text;
+     }
+}
+
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Meta data line below post title
+.post-date {
+  display: block;
+  margin-top: -.4rem;
+  margin-bottom: 1rem;
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-text;
+     }
+}
+
+.permalink {
+  display: inline;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-color;
+     }
+}
+
+.author {
+  display: inline;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  opacity: .7;
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-accent;
+   opacity: 1;
+     }
+}
+
+.tag-list {
+
+  a:link {
+    color: $color;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1.5px solid $accent;
+    border-radius: .25em;
+    margin-bottom: .5rem;
+    margin-right: .1rem;
+    font-size: 90%;
+
+    @media (prefers-color-scheme: light) {
+     color: $light-scheme-color;
+     border: 1.5px solid #d2d2d2;
+     background-color: #f8f8f8;
+       }
+}
+
+a:visited {
+    color: $color;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid $accent;
+    border-radius: .25em;
+    margin-bottom: .5rem;
+    margin-right: .1rem;
+    font-size: 90%;
+
+    @media (prefers-color-scheme: light) {
+     color: $light-scheme-color;
+     border: 1.5px solid #d2d2d2;
+     background-color: #f8f8f8;
+       }
+  }
+}
+
+  .source {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 2rem;
+      font-variant: small-caps;
+  }
+
+  .PageNavigation a {
+    display: inline;
+    width: auto;
+    float: left;
+    margin: 1em 0;
+  }
+  .PageNavigation .next {
+    float: right;
+    width: auto;
+    text-align: right;
+  }

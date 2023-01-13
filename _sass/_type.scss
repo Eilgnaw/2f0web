@@ -1,0 +1,211 @@
+// Typography
+
+h1, h2, h3, h4, h6 {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  color: $header;
+  position: relative;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-header;
+     }
+}
+
+h3::before {
+    content: "#";
+    color: $header-before;
+    left: -1em;
+    top: 0;
+	position: absolute;
+
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-header-before;
+     }
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid $text;
+  border-bottom: 1px solid $text;
+  opacity: .2;
+
+  @media (prefers-color-scheme: light) {
+  border-top: 1px solid $light-scheme-text;
+  border-bottom: 1px solid $light-scheme-text;
+  opacity: .2;
+     }
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  opacity: .5;
+  color: $text;
+  text-transform: uppercase;
+
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-text;
+    }
+
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+  }
+}
+
+span.link-arrow {
+	color: $header;
+
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-header;
+    }
+}
+
+blockquote {
+  width: 100%;
+  padding: .25em 50px .25em 25px;
+  margin: 40px auto;
+  font-style: italic;
+  font-size: 92%;
+  opacity: .9;
+  position: relative;
+  border-left: 4px solid $header;
+
+  @media (prefers-color-scheme: light) {
+  border-left: 4px solid $light-scheme-header;
+  opacity: .8;
+    }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 30em) {
+    padding-right: 5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+mark {
+    background: $accent;
+    color: $text;
+	  padding: 2px 2px;
+
+    @media (prefers-color-scheme: light) {
+    background: #e8e8e8;
+    color: $light-scheme-text;
+      }
+}
+
+// Footnote number within body text
+a[href^="#fn:"] {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  min-width: 35px;
+  margin: 0 0.1em 0 0.2em;
+  text-align: center;
+  color: $color;
+  background-color: rgba(33, 34, 40, 1);
+  border: 1.5px solid $accent;
+  border-radius: 1em;
+  vertical-align: middle;
+
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-color;
+  background-color: #F8F8F8;
+  border: 1.5px solid #d2d2d2;
+    }
+}
+
+// Back to footnote link
+a[href^="#fnref:"] {
+  display: inline-block;
+  margin-left: .1rem;
+  font-weight: bold;
+  padding: 0.1em 0.1em 0.1em;
+}
+
+// List of footnotes
+.footnotes {
+    margin-top: 2rem;
+    font-size: 80%;
+
+:target {
+	padding: 6px;
+  border: solid 1px $accent;
+  background-color: rgba(33, 34, 40, 1);
+
+  @media (prefers-color-scheme: light) {
+  border: solid 1.5px #d2d2d2;
+  background-color: #F8F8F8;
+    }
+  }
+}
+
+.reversefootnote {
+ text-decoration: none;
+ color: $color;
+
+ @media (prefers-color-scheme: light) {
+ color: $light-scheme-color;
+   }
+}
+
+// Custom type
+//
+// Extend paragraphs with `.lead` for larger introductory text.
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: $text;
+
+  @media (prefers-color-scheme: light) {
+  color: $light-scheme-text;
+    }
+}

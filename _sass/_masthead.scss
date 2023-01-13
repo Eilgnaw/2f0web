@@ -1,0 +1,52 @@
+// The style of the site's title, secondary description and navigation
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $text;
+  position: relative;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+  @media (prefers-color-scheme: light) {
+   color: $light-scheme-text;
+     }
+
+  a {
+    color: inherit;
+  }
+
+  small {
+    font-size: 75%;
+    font-weight: 400;
+    opacity: .5;
+  }
+}
+
+.navigation {
+  display: block;
+  font-size: 100%;
+  font-weight: 500;
+  color: #333333;
+  
+ul#navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  ul#navigation-list li {
+  display: inline;
+  list-style: none;
+	padding-left: 6.5px;
+  padding-right: 6.5px;
+	margin: 0;
+    }
+}
