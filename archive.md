@@ -9,7 +9,7 @@ title: Archive
 <div class="post">
 
 {% for post in site.posts %}
-{% assign thisyear = post.date | date: "%B %Y" %}
+{% assign thisyear = post.date | date: "%Y-%m" %}
 {% assign prevyear = post.previous.date | date: "%B %Y" %}
 {% assign counter = counter | plus: 1 %}
 {% if thisyear != prevyear %}
@@ -20,7 +20,7 @@ title: Archive
 {% for post2 in site.posts limit: counter offset: fli %} 
 
 <a href="{{ post2.url }}">{{ post2.title }}</a>&nbsp;&nbsp;
-<small><small><time datetime="{{ post2.date | date_to_xmlschema }}">{{ post2.date | date: "%-d %b %Y" }}</time></small></small>
+<small><small><time datetime="{{ post2.date | date_to_xmlschema }}">{{ post2.date | date: "%Y-%m-%d" }}</time></small></small>
 <br>
 {% endfor %}
 {% assign counter = 0 %}
