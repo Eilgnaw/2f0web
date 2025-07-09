@@ -1,0 +1,11 @@
+[{
+    "name": "large_widget",
+    "widgets": [{
+        "name": "请先升级APP",
+        "preview": "chunlianwidgetshot111.png",
+        "download": "chunlian.omni",
+        "author": "Eilgnaw",
+        "type": "large",
+        "content": "This is large widget"
+    }]
+}]

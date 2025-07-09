@@ -1,0 +1,224 @@
+[{
+        "name": "live_activity",
+        "widgets": [{
+                "name": "天气诗词",
+                "preview": "tianqishiciv1.png",
+                "download": "tianqishiciv1.omni",
+                "author": "Eilgnaw",
+                "type": "live",
+                "content": "This is live activity"
+            },
+            {
+                "name": "取件码",
+                "preview": "livequjianma1.png",
+                "download": "livequjianma1.omni",
+                "author": "Eilgnaw",
+                "type": "live",
+                "content": "This is live activity"
+            }
+        ]
+    },
+    {
+        "name": "inline_widget",
+        "widgets": [{
+            "name": "农历日期",
+            "preview": "nongliv1.png",
+            "download": "nongliv1.omni",
+            "author": "Eilgnaw",
+            "type": "inline",
+            "content": "This is a inline_widget"
+        }]
+    },
+    {
+        "name": "rectangular_widget",
+        "widgets": [{
+                "name": "睡眠时间锁屏",
+                "preview": "shuimianrv1.png",
+                "download": "shuimianrv1.omni",
+                "author": "Eilgnaw",
+                "type": "rectangular",
+                "content": "This is a rectangular_widget"
+            },
+            {
+                "name": "古诗词锁屏",
+                "preview": "lockgushiciv1.png",
+                "download": "lockgushiciv1.omni",
+                "author": "Eilgnaw",
+                "type": "rectangular",
+                "content": "This is a rectangular_widget"
+            }
+        ]
+    },
+    {
+        "name": "circular_widget",
+        "widgets": [{
+                "name": "今日油价",
+                "preview": "oilpricev3.png",
+                "download": "oilpricev3.omni",
+                "author": "Eilgnaw",
+                "type": "circular",
+                "content": "This is circular_widget"
+            },
+            {
+                "name": "指TA针",
+                "preview": "zhitazhenv3.png",
+                "download": "zhitazhenv3.omni",
+                "author": "Eilgnaw",
+                "type": "circular",
+                "content": "This is circular_widget"
+            }
+        ]
+    },
+    {
+        "name": "small_widget",
+        "widgets": [{
+                "name": "睡眠时间",
+                "preview": "shuimiantime.png",
+                "download": "shuimiantime1.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "Rabbit",
+                "preview": "rabbitv1.png",
+                "download": "rabbitv1.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "MacA",
+                "preview": "macpreview.png",
+                "download": "maca.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "取件码",
+                "preview": "qujianmav2.png",
+                "download": "qujianmav3.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "事件",
+                "preview": "shijianwidgetshot.png",
+                "download": "shijian.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "设置使用示例",
+                "preview": "setting.png",
+                "download": "settings.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            }, {
+                "name": "中国电信",
+                "preview": "chinatelecom.png",
+                "download": "chinatelecom.omni",
+                "author": "Eilgnaw",
+                "type": "small",
+                "content": "This is small widget"
+            },
+            {
+                "name": "10010",
+                "preview": "10010widgetshot.png",
+                "download": "10010.omni",
+                "author": "乌",
+                "type": "small",
+                "content": "This is small widget"
+            }
+        ]
+    },
+    {
+        "name": "medium_widget",
+        "widgets": [{
+                "name": "每日诗词",
+                "preview": "meirishiciwidgetshot.png",
+                "download": "meirishiciv1.omni",
+                "author": "Eilgnaw",
+                "type": "medium",
+                "content": "This is medium widget"
+            },
+            {
+                "name": "工作日",
+                "preview": "workdaypreview.png",
+                "download": "workday.omni",
+                "author": "Eilgnaw",
+                "type": "medium",
+                "content": "This is medium widget"
+            },
+            {
+                "name": "黑神话悟空",
+                "preview": "heishenhuawidgetshot.png",
+                "download": "heishenhua.omni",
+                "author": "Eilgnaw",
+                "type": "medium",
+                "content": "This is medium widget"
+            },
+            {
+                "name": "随机小红书",
+                "preview": "suijixhswidgetshot.png",
+                "download": "suijixhs.omni",
+                "author": "Eilgnaw",
+                "type": "medium",
+                "content": "This is medium widget"
+            },
+            {
+                "name": "随机抖音",
+                "preview": "suijidouyinwidgetshot.png",
+                "download": "suijidouyin.omni",
+                "author": "Eilgnaw",
+                "type": "medium",
+                "content": "This is medium widget"
+            },
+            {
+                "name": "日历",
+                "preview": "riliwidgetshot.png",
+                "download": "rili.omni",
+                "author": "那年",
+                "type": "medium",
+                "content": "This is medium widget"
+            }
+        ]
+    },
+    {
+        "name": "large_widget",
+        "widgets": [{
+            "name": "春联",
+            "preview": "chunlianwidgetshot.png",
+            "download": "chunlian.omni",
+            "author": "Eilgnaw",
+            "type": "large",
+            "content": "This is large widget"
+        }]
+    },
+    {
+        "name": "toggle_widget",
+        "widgets": [{
+            "name": "开关模板",
+            "preview": "toggle.png",
+            "download": "togglev1.omni",
+            "author": "Eilgnaw",
+            "type": "toggle",
+            "content": "This is a toggle_widget"
+        }]
+    },
+    {
+        "name": "button_widget",
+        "widgets": [{
+            "name": "按钮模板",
+            "preview": "toggle.png",
+            "download": "button.omni",
+            "author": "Eilgnaw",
+            "type": "button",
+            "content": "This is a button_widget"
+        }]
+    }
+]
