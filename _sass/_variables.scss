@@ -1,38 +1,54 @@
 // Color schemes for light and dark mode
 
-$color: #0083a0;
-$accent: #6968A7;
+// Dark mode colors (default)
+$dark-scheme-color: #0083a0;
+$dark-scheme-accent: #909090;
+$dark-scheme-bg: #1a1a1a;              // 页面背景稍微调亮一点
+$dark-scheme-text: #f7f6f5;
+$dark-scheme-header: #8f8f8e;
+$dark-scheme-header-before: #8f8f8e;
 
+// Light mode colors  
 $light-scheme-color: #009ddc;
 $light-scheme-accent: #909090;
-
-$bg: #1e1e1e;
-$text: #f7f6f5;
-$header: #8f8f8e;
-$header-before: #8f8f8e;
-
-$light-scheme-bg: #f7f6f4;
+$light-scheme-bg: #fafafa;             // 页面背景稍微调暗一点
 $light-scheme-text: #474747;
 $light-scheme-header: #ACACAC;
 $light-scheme-header-before: #ACACAC;
 
-$code-inline: #5bc8f9;
-$code-inline-bg: #212c2d;
-$code-block-accent: #5bc8f9;
-$code-block-bg: rgba(33, 34, 40, 1);
+// Default variables (for backward compatibility - using dark mode as default)
+$color: $dark-scheme-color;
+$accent: $dark-scheme-accent;
+$bg: $dark-scheme-bg;
+$text: $dark-scheme-text;
+$header: $dark-scheme-header;
+$header-before: $dark-scheme-header-before;
+
+// Code highlighting colors - 优化层次关系
+// Dark mode code colors
+$code-inline: #64b5f6;                 // 亮蓝色，更好的对比度
+$code-inline-bg: #2d2d2d;              // 比页面背景亮一些
+$code-block-accent: #64b5f6;
+$code-block-bg: #252525;               // 比页面背景稍亮，但比行内代码背景暗
 $code-border: #c24a45;
 
-$code-inline-light: #343434;
-$code-inline-bg-light: #F8F8F8;
-$code-block-accent-light: #00c2bb;
-$code-block-bg-light: rgba(49, 50, 59, 1);
+// Light mode code colors
+$code-inline-light: #1565c0;           // 深蓝色，更好的对比度
+$code-inline-bg-light: #f0f0f0;        // 比页面背景暗一些
+$code-block-accent-light: #00838f;
+$code-block-bg-light: #f8f8f8;         // 比页面背景稍暗，但比行内代码背景亮
 $code-border-light: #ACACAC;
 
+// Notice/alert colors
+// Dark mode
 $notice: #6968A7;
 $notice-bg: rgba(33, 34, 40, 1);
+
+// Light mode
 $notice-light: #d2d2d2;
 $notice-bg-light: #F8F8F8;
 
+// Message colors (theme independent)
 $message-default: #002d2b;
 $message-light: #F8F8F8;
 $message-black: #282828;

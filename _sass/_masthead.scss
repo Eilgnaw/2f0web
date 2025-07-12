@@ -5,6 +5,81 @@
   padding-bottom: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 100;
+  
+  &:hover {
+    opacity: 0.8;
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .theme-toggle-icon {
+    pointer-events: none;
+    line-height: 1;
+    font-size: 0;
+    
+    .theme-icon {
+      width: 24px;
+      height: 24px;
+      display: none;
+      margin: 0;
+      line-height: 1;
+      vertical-align: top;
+    }
+    
+    .auto-icon {
+      display: block;
+    }
+  }
+  
+  // Dark mode icon visibility fixes
+  html[data-theme="dark"] & {
+    border-color: rgba(255, 255, 255, 0.2);
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .theme-toggle-icon .theme-icon {
+      filter: invert(1) brightness(0.9);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    top: 0.5rem;
+    
+    .theme-toggle-icon {
+      font-size: 0;
+    }
+  }
+}
+
+// 不同模式下的视觉效果
+html[data-theme="light"] .masthead-title {
+  color: $light-scheme-text !important;
+}
+
+html[data-theme="dark"] .masthead-title {
+  color: $dark-scheme-text !important;
 }
 
 .masthead-title {

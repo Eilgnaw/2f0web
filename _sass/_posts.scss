@@ -83,6 +83,23 @@ figure {
      }
 }
 
+// Manual theme overrides for post titles
+html[data-theme="light"] {
+  .page-title,
+  .post-title,
+  .post-title a {
+    color: $light-scheme-text !important;
+  }
+}
+
+html[data-theme="dark"] {
+  .page-title,
+  .post-title,
+  .post-title a {
+    color: $dark-scheme-text !important;
+  }
+}
+
 .page-title,
 .post-title {
   margin-top: 0;
@@ -164,6 +181,25 @@ a:visited {
      border: 1.5px solid #d2d2d2;
      background-color: #f8f8f8;
        }
+  }
+}
+
+// Manual theme overrides for tag-list
+html[data-theme="light"] .tag-list {
+  a:link,
+  a:visited {
+    color: $light-scheme-color !important;
+    border: 1.5px solid #d2d2d2 !important;
+    background-color: #f8f8f8 !important;
+  }
+}
+
+html[data-theme="dark"] .tag-list {
+  a:link,
+  a:visited {
+    color: $dark-scheme-color !important;
+    border: 1.5px solid $dark-scheme-accent !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
   }
 }
 

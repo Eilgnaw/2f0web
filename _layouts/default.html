@@ -39,6 +39,7 @@ layout: compress
 
     <div class="container content">
       <header class="masthead">
+        {% include theme-toggle.html %}
 
         <h2 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a><br>
@@ -77,7 +78,101 @@ layout: compress
      </script>
     {% endif %}
 
-<!-- {% include cookie-consent.html%} -->
+<script>
+console.log('Theme script starting');
+
+function setupTheme() {
+  console.log('Setting up theme toggle');
+  
+  var button = document.getElementById('theme-toggle');
+  var icon = document.querySelector('.theme-toggle-icon');
+  
+  if (!button || !icon) {
+    console.log('Theme elements not found');
+    return;
+  }
+  
+  console.log('Theme elements found');
+  
+  var modes = ['auto', 'light', 'dark'];
+  
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  
+  function setIcon(mode) {
+    console.log('Setting icon for mode:', mode);
+    
+    var icons = document.querySelectorAll('.theme-icon');
+    console.log('Found icons:', icons.length);
+    
+    icons.forEach(function(icon) {
+      icon.style.display = 'none';
+    });
+    
+    var targetClass;
+    if (mode === 'auto') {
+      targetClass = '.auto-icon';
+    } else if (mode === 'light') {
+      targetClass = '.light-icon';
+    } else {
+      targetClass = '.dark-icon';
+    }
+    
+    var targetIcon = document.querySelector(targetClass);
+    console.log('Target icon:', targetClass, targetIcon);
+    
+    if (targetIcon) {
+      targetIcon.style.display = 'inline-block';
+      console.log('Icon displayed');
+    } else {
+      console.log('Target icon not found');
+    }
+  }
+  
+  function applyTheme(mode) {
+    console.log('Applying theme:', mode);
+    
+    var theme = mode === 'auto' ? getSystemTheme() : mode;
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme-mode', mode);
+    setIcon(mode);
+    
+    console.log('Theme applied:', theme);
+  }
+  
+  function getCurrentMode() {
+    var saved = localStorage.getItem('theme-mode');
+    return saved || 'auto';
+  }
+  
+  var current = getCurrentMode();
+  applyTheme(current);
+  
+  button.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    var currentMode = getCurrentMode();
+    var index = modes.indexOf(currentMode);
+    var nextIndex = (index + 1) % modes.length;
+    var nextMode = modes[nextIndex];
+    
+    console.log('Switching to:', nextMode);
+    applyTheme(nextMode);
+  });
+  
+  console.log('Theme setup complete');
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupTheme);
+} else {
+  setupTheme();
+}
+
+console.log('Theme script loaded');
+</script>
 
   </body>
 </html>
