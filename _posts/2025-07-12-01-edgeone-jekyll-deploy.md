@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "使用 Github Action 部署 Jekyll 静态站点到 EdgeOne"
-date: 2024-12-15
+date: 2025-07-12
 tags: [EdgeOne,Jekyll,部署,CDN]
 categories: [部署]
 --- 
