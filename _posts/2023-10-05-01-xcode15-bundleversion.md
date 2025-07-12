@@ -7,7 +7,7 @@ categories: [Xcode]
 --- 
 
 
-在Xcode 15更新后，iOS项目中除了主程序之外的其他target（例如小组件、分享扩展等）中设置版本号的选项似乎不再可见，因此无法直接修改版本号。虽然可以在"Build Settings"中单独设置，但这可能会比较繁琐。下面提供了一个简单的解决方案：
+在 Xcode 15 更新后，iOS 项目中除了主程序之外的其他 `target`（例如小组件、分享扩展等）中设置版本号的选项似乎不再可见，因此无法直接修改版本号。虽然可以在 `Build Settings` 中单独设置，但这可能会比较繁琐。下面提供了一个简单的解决方案：
 
 #### 添加构建配置文件
 - 打开Xcode并选择 `File` > `New File` > `Configuration Settings File` > `Next`

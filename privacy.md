@@ -163,9 +163,9 @@ title: Privacy
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
 <li>
-<p>By email: quattle@victorwynne.com</p>
+<p>By email: mail@eilgnaw.com</p>
 </li>
 <li>
-<p>By visiting this page on our website: <a href="https://github.com/victorwynne/quattle" rel="external nofollow noopener" target="_blank">https://github.com/victorwynne/quattle</a></p>
+<p>By visiting this page on our website: <a href="https://github.com/eilgnaw/2f0web" rel="external nofollow noopener" target="_blank">https://github.com/eilgnaw/2f0web</a></p>
 </li>
 </ul>
