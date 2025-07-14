@@ -3,7 +3,7 @@ layout: post
 title: "使用 Github Action 部署 Jekyll 静态站点到 EdgeOne"
 date: 2025-07-12
 tags: [EdgeOne,Jekyll,部署,CDN]
-categories: [部署]
+categories: [EdgeOne]
 --- 
 由于EdgeOne Pages 没有提供 Jekyll 构建功能,所以我们使用 Github Action 进行部署,以下是部署流程
 

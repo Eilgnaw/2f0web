@@ -112,3 +112,88 @@ tbody tr:nth-child(odd) th {
   background-color: #d2d2d2;
   }
 }
+
+
+html[data-theme="light"] {
+  .gt-comment-content {
+    background-color: #f6f6f6 !important;
+      border-radius: 5px;
+    &:hover {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+// Gitalk dark mode styles
+html[data-theme="dark"] {
+  .gt-header-textarea {
+    background-color: #2d3748 !important;
+    border-color: #4a5568 !important;
+    color: #e2e8f0 !important;
+    
+    &::placeholder {
+      color: #a0aec0 !important;
+    }
+    
+    &:focus {
+      border-color: #63b3ed !important;
+      box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.1) !important;
+    }
+  }
+  
+  .gt-comment-content {
+    background-color: #2d3748 !important;
+    border-color: #4a5568 !important;
+    color: #f7fafc !important;
+    border-radius: 5px;
+    &::placeholder {
+      color: #a0aec0 !important;
+    }
+    
+    &:focus {
+      border-color: #63b3ed !important;
+      box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.1) !important;
+    }
+    
+    &:hover {
+      background-color: #2d3748 !important;
+      border-color: #4a5568 !important;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  }
+  
+  .gt-header-controls-tip {
+    color: #a0aec0 !important;
+  }
+  
+  .gt-comment-username {
+    color: #0083a0 !important;
+  }
+  
+  .gt-comment-text {
+    color: #a1a1a1 !important;
+  }
+  
+  .gt-container .gt-btn-preview {
+      background-color: #1e1e1e;
+      color: #6190e8;
+  }
+  .gt-container .gt-btn-public {
+      color: #24292e;
+  }
+
+  .gt-container .gt-comment-body {
+    color: #a0aec0 !important;
+   }
+
+}
+
+// Gitalk avatar styles
+.gt-avatar {
+  border-radius: 50% !important;
+}
+
+.gt-avatar img {
+  border-radius: 50% !important;
+}

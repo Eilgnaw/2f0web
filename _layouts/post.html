@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-
 <article class="post">
 {% if page.link %}
 <h2 class="post-title"><a href="{{ page.link }}">
   {{ page.title | smartify }} <span class="link-arrow">&rarr;</span></a>
 </h2>
   {% else %}
-<h2 class="post-title">{{ page.title | smartify }}</h2>
+<h2 class="post-title"><a href="{{ page.url }}">
+  {{ page.title | smartify }} </a></h2>
   {% endif %}
 
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date"> {{ page.date |  date: "%Y-%m-%d" }} 
@@ -41,7 +41,7 @@ layout: default
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
   </div>
-
+  <div id="gitalk-container"></div>
   {% if page.link %}
   <br>
   <span class="source" role="doc-endnotes">
@@ -49,7 +49,6 @@ layout: default
   </span><br>
   {% endif %}
   <br>
-
 </article>
 
 <div class="PageNavigation">

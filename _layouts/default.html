@@ -30,7 +30,8 @@ layout: compress
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/fav.ico">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   {% seo title=false %}
 
 </head>
@@ -172,6 +173,24 @@ if (document.readyState === 'loading') {
 }
 
 console.log('Theme script loaded');
+
+var postId = location.pathname;
+var postTitleLink = document.querySelector('.post-title a');
+if (postTitleLink) {
+  postId = postTitleLink.getAttribute('href');
+}
+console.log(postId);
+var gitalk = new Gitalk({
+  clientID: 'Ov23liXAPT9gRF1ST1k0',
+  clientSecret: 'bdb239afc4d3b197aaa6e19f35066f223fcbe15d',
+  repo: '2f0web',
+  owner: 'Eilgnaw',
+  admin: ['Eilgnaw'],
+  id: postId, 
+  createIssueManually: true
+});
+
+gitalk.render('gitalk-container')
 </script>
 
   </body>
